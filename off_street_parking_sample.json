@@ -1,11 +1,14 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.1.3",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Parking/OffStreetParking/schema.json",
+  "title": "Smart Data Models - Parking / Off Street Parking",
+  "description": "Off street parking",
   "type": "object",
-  "required": [
-    "id",
-    "type"
-  ],
-  "properties": {
+  "allOf": [
+    {
+      "properties": {
     "TimeInstant": {
       "type": "string",
       "description": "Fecha/hora de la última actualización de información"
@@ -107,4 +110,11 @@
       "description": "Tipo de entidad NGSI"
     }
   }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "location"
+  ]
 }
