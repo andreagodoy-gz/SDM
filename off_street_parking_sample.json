@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "type"
+  ],
+  "properties": {
+    "TimeInstant": {
+      "type": "string",
+      "description": "Fecha/hora de la última actualización de información"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nombre del OffStreetParking"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descripción del OffStreetParking"
+    },
+    "category": {
+      "type": "string",
+      "description": "Categoría del OffStreetParking"
+    },
+    "address": {
+      "type": "string",
+      "description": "Dirección del OffStreetParking"
+    },
+    "location": {
+      "type": "object",
+      "description": "Posición geográfica."
+    },
+    "polygon": {
+      "type": "object",
+      "description": "Poligono del centro de aparcamiento en GeoJSON, coordenadas long, lat"
+    },
+    "status": {
+      "type": "string",
+      "description": "Estado de la zona de aparcamiento"
+    },
+    "maintainer": {
+      "type": "string",
+      "description": "Nombre del mantenedor o empresa mantenedora"
+    },
+    "maintainerEmail": {
+      "type": "string",
+      "description": "Dirección de correo del mantenedor"
+    },
+    "fromEmailCustomer": {
+      "type": "string",
+      "description": "Dirección del remitente que envía los emails de alerta y ausencia"
+    },
+    "occupancyModified": {
+      "type": "string",
+      "description": "Fecha/Hora de la última actualización de información de ocupación"
+    },
+    "totalSpotNumber": {
+      "type": "number",
+      "description": "Número total de plazas existentes"
+    },
+    "occupiedSpotNumber": {
+      "type": "number",
+      "description": "Número de plazas ocupadas"
+    },
+    "availableSpotNumber": {
+      "type": "number",
+      "description": "Número de plazas libres"
+    },
+    "percentageOccupancy": {
+      "type": "number",
+      "description": "Porcentaje de ocupación en tanto por ciento"
+    },
+    "accessModified": {
+      "type": "string",
+      "description": "Fecha/Hora de la última actualización de afluencia"
+    },
+    "vehicleEntranceCount": {
+      "type": "number",
+      "description": "Número de entradas"
+    },
+    "vehicleExitCount": {
+      "type": "number",
+      "description": "Número de salidas"
+    },
+    "lowOccupancyThreshold": {
+      "type": "number",
+      "description": "Límite superior del umbral de ocupación bajo"
+    },
+    "mediumOccupancyThreshold": {
+      "type": "number",
+      "description": "Límite superior del umbral de ocupación medio"
+    },
+    "highOccupancyThreshold": {
+      "type": "number",
+      "description": "Límite inferior del umbral de ocupación alto"
+    },
+    "refTariff": {
+      "type": "string",
+      "description": "Referencia a la entidad ParkingTariff aplicada"
+    },
+    "id": {
+      "type": "string",
+      "description": "Identificador único de la entidad"
+    },
+    "type": {
+      "type": "string",
+      "description": "Tipo de entidad NGSI"
+    }
+  }
+}
