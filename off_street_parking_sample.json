@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "1.0.0",
   "$id": "https://github.com/andreagodoy-gz/SDM/blob/main/off_street_parking_sample.json",
   "modelTags": "FIWARE",
@@ -33,11 +33,11 @@
         },
         "location": {
           "type": "object",
-          "description": "Geoproperty. Posición geográfica."
+          "description": "GeoProperty. Posición geográfica."
         },
         "polygon": {
           "type": "object",
-          "description": "Geoproperty. Poligono del centro de aparcamiento en GeoJSON, coordenadas long, lat"
+          "description": "GeoProperty. Poligono del centro de aparcamiento en GeoJSON, coordenadas long, lat"
         },
         "status": {
           "type": "string",
