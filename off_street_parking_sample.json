@@ -1,8 +1,5 @@
 {
-  "$schema": {
-  "type": "string",
-  "value": "http://json-schema.org/schema#"
-  },
+  "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "1.0.0",
   "$id": "https://github.com/andreagodoy-gz/SDM/blob/main/off_street_parking_sample.json",
   "modelTags": "FIWARE",
