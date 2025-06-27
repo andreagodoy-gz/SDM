@@ -101,11 +101,11 @@
       "type": "string",
       "description": "Property. Referencia a la entidad ParkingTariff aplicada"
     },
-    "id": {
+    "entityId": {
       "type": "string",
       "description": "Property. Identificador único de la entidad"
     },
-    "type": {
+    "entityType": {
       "type": "string",
       "description": "Property. Tipo de entidad NGSI"
     }
@@ -113,8 +113,8 @@
     }
   ],
   "required": [
-    "id",
-    "type",
+    "entityId",
+    "entityType",
     "location"
   ]
 }
