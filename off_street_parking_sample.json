@@ -1,20 +1,17 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": {
+  "type": "string",
+  "value": "http://json-schema.org/schema#"
+  },
   "$schemaVersion": "1.0.0",
   "$id": "https://github.com/andreagodoy-gz/SDM/blob/main/off_street_parking_sample.json",
   "modelTags": "FIWARE",
-  "license": "https://example.com/license/internal",
+  "license": "https://example.com",
   "derivedFrom": "https://github.com/smart-data-models/dataModel.Parking/blob/master/OffStreetParking/schema.json",
   "title": "Telefónica SC - OffStreet Parking",
   "description": "Aparcamiento (o zona de aparcamiento), dentro o fuera de la vía pública, formado por un conjunto de plazas de aparcamiento que no están sensorizadas individualmente. Un aparcamiento de tipo OffStreetParking tiene un conjunto de accesos, que son por donde entran y salen los vehículos a dicho aparcamiento. La ocupación de un aparcamiento de tipo OffStreetParking se calcula a partir de las entradas y salidas de vehículos por dichos accesos. Las entradas suman ocupación y las salidas restan ocupación.",
   "type": "object",
   "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
     {
       "properties": {
         "TimeInstant": {
